@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`files createFolder should return an error if folder already exists 1`] = `[Error: Folder existing\\folder already exists.]`;
+
+exports[`files readConfig should throw if file does not exist 1`] = `"gfuncs.conf.json is not found. Please run gfuncs init."`;
