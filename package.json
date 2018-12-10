@@ -2,15 +2,16 @@
   "bin": {
     "gfuncs": "./index.js"
   },
-  "name": "google-functions-scaffolder",
+  "name": "firebase-functions-scaffolder",
+  "repository": "",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple firebase functions scaffolder with built-in testing",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch"
   },
-  "author": "",
+  "author": "kra.yonatan@gmail.com",
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.1",
