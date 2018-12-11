@@ -2,4 +2,58 @@
 
 exports[`files createFolder should return an error if folder already exists 1`] = `[Error: Folder existing\\folder already exists.]`;
 
+exports[`files createPackage js should replace the %FuncName% with packageName 1`] = `
+"export function packageName(request, response = {}, db = {}) {
+    // your google function comes here
+}
+"
+`;
+
+exports[`files createPackage js should replace the %FuncName% with packageName 2`] = `
+"const packageName = require('./packageName');
+
+describe(\`packageName \`, () => {
+
+    // offline test - mock the providers
+    beforeEach(() => {
+
+    });
+
+    afterEach(() => {
+
+    });
+
+    it(\`should be a function\`, () => {
+        expect(typeof packageName ).toEqual('function');
+    });
+});"
+`;
+
+exports[`files createPackage ts should replace the %FuncName% with packageName 1`] = `
+"export function packageName(request, response = {}, db = {}) {
+    // your google function comes here
+}
+"
+`;
+
+exports[`files createPackage ts should replace the %FuncName% with packageName 2`] = `
+"import { packageName  } from './packageName ';
+
+describe(\`packageName \`, () => {
+
+    // offline test - mock the providers
+    beforeEach(() => {
+
+    });
+
+    afterEach(() => {
+
+    });
+
+    it(\`should be a function\`, () => {
+        expect(typeof packageName).toEqual('function');
+    });
+});"
+`;
+
 exports[`files readConfig should throw if file does not exist 1`] = `"gfuncs.conf.json is not found. Please run gfuncs init."`;
