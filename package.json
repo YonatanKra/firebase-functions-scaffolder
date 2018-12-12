@@ -3,7 +3,10 @@
     "gfuncs": "./index.js"
   },
   "name": "firebase-functions-scaffolder",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YonatanKra/firebase-functions-scaffolder.git"
+  },
   "version": "1.0.0",
   "description": "A simple firebase functions scaffolder with built-in testing",
   "main": "index.js",
@@ -11,7 +14,10 @@
     "test": "jest",
     "test:watch": "jest --watch"
   },
-  "author": "kra.yonatan@gmail.com",
+  "author": {
+    "name": "Yonatan Kra",
+    "email": "kra.yonatan@gmail.com"
+  },
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.1",
